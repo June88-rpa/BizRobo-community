@@ -2,24 +2,23 @@
 <object class="Robot" serializationversion="2">
   <prologue>
     <saved-by-versions>
-      <version>10.7.0.9</version>
+      <version>10.7.0.4</version>
     </saved-by-versions>
-    <file-type>robot</file-type>
+    <comment/>
+    <tags/>
     <referenced-types>
       <type name="ファイル情報"/>
     </referenced-types>
-    <triggers/>
-    <sub-robots/>
-    <device-mappings/>
-    <comment/>
-    <tags/>
     <referenced-snippets/>
+    <triggers/>
     <typed-variables>
       <typed-variable name="ファイル情報" type-name="ファイル情報"/>
     </typed-variables>
+    <global-variables/>
     <parameters/>
     <return-variables/>
     <store-in-database-variables/>
+    <device-mappings/>
     <browser-engine>WEBKIT</browser-engine>
   </prologue>
   <property name="variables" class="Variables">
@@ -252,7 +251,7 @@
           <property name="loopDirection" class="LoopInExcel$LoopDirection">
             <property name="enum-name" class="String">ROWS</property>
           </property>
-          <property name="firstIndex" class="Integer">2</property>
+          <property name="firstIndex" class="Integer">1</property>
           <property name="rangeName" class="DesiredElementName">
             <property name="name" class="String" id="23">選択行</property>
           </property>
