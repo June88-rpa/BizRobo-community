@@ -252,9 +252,9 @@
           <property name="loopDirection" class="LoopInExcel$LoopDirection">
             <property name="enum-name" class="String">ROWS</property>
           </property>
-          <property name="firstIndex" class="Integer">2</property>
+          <property name="firstIndex" class="Integer">1</property>
           <property name="rangeName" class="DesiredElementName">
-            <property name="name" class="String" id="23">選択行</property>
+            <property name="name" class="String">選択行</property>
           </property>
         </property>
         <property name="elementFinders" class="ElementFinders">
@@ -273,18 +273,18 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="24">
+      <object class="Transition" serializationversion="3" id="23">
         <property name="name" class="String">Set Named Range</property>
         <property name="stepAction" class="SetNamedRange">
           <property name="rangeName" class="DesiredElementName">
-            <property name="name" class="String" id="25">基準セル</property>
+            <property name="name" class="String" id="24">基準セル</property>
           </property>
         </property>
         <property name="elementFinders" class="ElementFinders">
           <object class="ExcelElementFinder">
             <property name="detail" class="NamedRangeCellFinderDetail">
               <property name="rangeName" class="ElementName">
-                <property name="name" idref="23"/>
+                <property name="name" class="String">選択行</property>
               </property>
               <property name="usage" class="ColumnFromRange"/>
             </property>
@@ -297,7 +297,7 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="26">
+      <object class="Transition" serializationversion="3" id="25">
         <property name="name" class="String">Assign 転記データリスト</property>
         <property name="stepAction" class="AssignVariable" serializationversion="4">
           <property name="stringExpr" class="Expression" serializationversion="1">
@@ -315,8 +315,8 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="27">
-        <property name="name" class="String" id="28">For Each Text Part</property>
+      <object class="Transition" serializationversion="3" id="26">
+        <property name="name" class="String" id="27">For Each Text Part</property>
         <property name="stepAction" class="ForEachTextPart">
           <property name="input" class="kapow.robot.plugin.common.support.expression.multipletype.VariableExpression" serializationversion="2">
             <property name="variable" class="kapow.robot.plugin.common.support.AttributeName2">
@@ -335,7 +335,7 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="29">
+      <object class="Transition" serializationversion="3" id="28">
         <property name="name" class="String">Extract 転記データリスト</property>
         <property name="stepAction" class="ExtractCell">
           <property name="dataConverters" class="DataConverters">
@@ -351,7 +351,7 @@
           <object class="ExcelElementFinder">
             <property name="detail" class="NamedRangeCellFinderDetail">
               <property name="rangeName" class="ElementName">
-                <property name="name" idref="25"/>
+                <property name="name" idref="24"/>
               </property>
               <property name="usage" class="ColumnFromRange">
                 <property name="columnId" class="ByIndexExcelColumnId">
@@ -370,8 +370,8 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="End" id="30"/>
-      <object class="Transition" serializationversion="3" id="31">
+      <object class="End" id="29"/>
+      <object class="Transition" serializationversion="3" id="30">
         <property name="name" class="String">Open 転記用 Excel</property>
         <property name="stepAction" class="OpenVariable">
           <property name="variable" class="kapow.robot.plugin.common.support.AttributeName2">
@@ -386,8 +386,8 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="32">
-        <property name="name" idref="28"/>
+      <object class="Transition" serializationversion="3" id="31">
+        <property name="name" idref="27"/>
         <property name="stepAction" class="ForEachTextPart">
           <property name="input" class="kapow.robot.plugin.common.support.expression.multipletype.VariableExpression" serializationversion="2">
             <property name="variable" class="kapow.robot.plugin.common.support.AttributeName2">
@@ -409,14 +409,14 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="33">
+      <object class="Transition" serializationversion="3" id="32">
         <property name="name" class="String">Insert Rows</property>
         <property name="stepAction" class="InsertRows">
           <property name="insertWhereMode" class="InsertWhere">
             <property name="enum-name" class="String">LAST</property>
           </property>
           <property name="rangeName" class="DesiredElementName">
-            <property name="name" class="String" id="34">値設定行</property>
+            <property name="name" class="String" id="33">値設定行</property>
           </property>
         </property>
         <property name="elementFinders" class="ElementFinders">
@@ -435,8 +435,8 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="35">
-        <property name="name" idref="28"/>
+      <object class="Transition" serializationversion="3" id="34">
+        <property name="name" idref="27"/>
         <property name="stepAction" class="ForEachTextPart">
           <property name="input" class="kapow.robot.plugin.common.support.expression.multipletype.VariableExpression" serializationversion="2">
             <property name="variable" class="kapow.robot.plugin.common.support.AttributeName2">
@@ -455,7 +455,7 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="Transition" serializationversion="3" id="36">
+      <object class="Transition" serializationversion="3" id="35">
         <property name="name" class="String">Set Content of Cell</property>
         <property name="stepAction" class="SetContentOfCell">
           <property name="contentExpression" class="kapow.robot.plugin.common.support.expression.multipletype.VariableExpression" serializationversion="2">
@@ -468,7 +468,7 @@
           <object class="ExcelElementFinder">
             <property name="detail" class="NamedRangeCellFinderDetail">
               <property name="rangeName" class="ElementName">
-                <property name="name" idref="34"/>
+                <property name="name" idref="33"/>
               </property>
               <property name="usage" class="ColumnFromRange">
                 <property name="columnId" class="ByIndexExcelColumnId">
@@ -488,8 +488,8 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="End" id="37"/>
-      <object class="Transition" serializationversion="3" id="38">
+      <object class="End" id="36"/>
+      <object class="Transition" serializationversion="3" id="37">
         <property name="name" class="String">Write File</property>
         <property name="stepAction" class="WriteFile" serializationversion="0">
           <property name="fileNameExpression" class="kapow.robot.plugin.common.support.expression.multipletype.VariableExpression" serializationversion="2">
@@ -514,7 +514,7 @@
         <property name="enabled" idref="8"/>
         <property name="changedProperties" class="java.util.HashSet"/>
       </object>
-      <object class="End" id="39"/>
+      <object class="End" id="38"/>
     </steps>
     <blockEndStep class="BlockEndStep"/>
     <edges class="ArrayList">
@@ -528,11 +528,11 @@
       </object>
       <object class="TransitionEdge">
         <from idref="10"/>
-        <to idref="31"/>
+        <to idref="30"/>
       </object>
       <object class="TransitionEdge">
         <from idref="10"/>
-        <to idref="38"/>
+        <to idref="37"/>
       </object>
       <object class="TransitionEdge">
         <from idref="11"/>
@@ -576,23 +576,27 @@
       </object>
       <object class="TransitionEdge">
         <from idref="22"/>
-        <to idref="24"/>
+        <to idref="23"/>
       </object>
       <object class="TransitionEdge">
-        <from idref="24"/>
+        <from idref="23"/>
+        <to idref="25"/>
+      </object>
+      <object class="TransitionEdge">
+        <from idref="25"/>
         <to idref="26"/>
       </object>
       <object class="TransitionEdge">
         <from idref="26"/>
-        <to idref="27"/>
+        <to idref="28"/>
       </object>
       <object class="TransitionEdge">
-        <from idref="27"/>
+        <from idref="28"/>
         <to idref="29"/>
       </object>
       <object class="TransitionEdge">
-        <from idref="29"/>
-        <to idref="30"/>
+        <from idref="30"/>
+        <to idref="31"/>
       </object>
       <object class="TransitionEdge">
         <from idref="31"/>
@@ -600,10 +604,10 @@
       </object>
       <object class="TransitionEdge">
         <from idref="32"/>
-        <to idref="33"/>
+        <to idref="34"/>
       </object>
       <object class="TransitionEdge">
-        <from idref="33"/>
+        <from idref="34"/>
         <to idref="35"/>
       </object>
       <object class="TransitionEdge">
@@ -611,12 +615,8 @@
         <to idref="36"/>
       </object>
       <object class="TransitionEdge">
-        <from idref="36"/>
-        <to idref="37"/>
-      </object>
-      <object class="TransitionEdge">
-        <from idref="38"/>
-        <to idref="39"/>
+        <from idref="37"/>
+        <to idref="38"/>
       </object>
     </edges>
   </property>
